@@ -40,8 +40,19 @@
         android:paddingRight="15dp"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Branch"
+        android:text="User_id"
         />
+    <TextView
+
+        android:layout_below="@+id/descp"
+        android:id="@+id/time"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="time"
+        />
+
 
 
 

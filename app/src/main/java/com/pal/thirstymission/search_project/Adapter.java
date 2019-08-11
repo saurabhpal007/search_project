@@ -34,6 +34,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
         holder.id.setText("ID:"+String.valueOf(projects.get(position).getId()));
         holder.uid.setText("USER ID:"+String.valueOf(projects.get(position).getUid()));
         holder.descp.setText("DESCP:"+String.valueOf(projects.get(position).getDescp()));
+        holder.time.setText("CREATED ON:"+String.valueOf(projects.get(position).getTime()));
         Log.i("qqqqqqqq",""+projects.get(position).getTitle());
 
     }
@@ -44,13 +45,14 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
     }
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
-        TextView title,id,descp,uid;
+        TextView title,id,descp,uid,time;
         public MyViewHolder(View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.title);
             id=itemView.findViewById(R.id.ide);
             uid=itemView.findViewById(R.id.uid);
             descp=itemView.findViewById(R.id.descp);
+            time=itemView.findViewById(R.id.time);
 
         }
     }

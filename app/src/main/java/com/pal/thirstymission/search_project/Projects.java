@@ -12,7 +12,7 @@ public class Projects {
 
     @SerializedName("descp") private String Descp;
     @SerializedName("user_id")  private int Uid;
-  //  @SerializedName("time")  private Timestamp time;
+    @SerializedName("time")  private String time;
 
 
 
@@ -33,9 +33,9 @@ public class Projects {
     public int getUid() {
        return Uid;
     }
-   // public Timestamp getTime() {
-       // return time;
-   // }
+      public String getTime() {
+       return time;
+    }
 
 
 
